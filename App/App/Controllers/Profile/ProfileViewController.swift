@@ -191,10 +191,10 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
             }
         }
         if(headerViewHeightConstraint.constant >= 151) {
-            self.timerGoalsAnimation = Timer.scheduledTimer(timeInterval: 0.00005, target: self, selector: #selector(self.animateHide), userInfo: nil, repeats: true)
+            self.timerGoalsAnimation = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(self.animateHide), userInfo: nil, repeats: true)
         } else {
             gradientView.removeFromSuperview()
-            self.timerGoalsAnimation = Timer.scheduledTimer(timeInterval: 0.00005, target: self, selector: #selector(self.animateShow), userInfo: nil, repeats: true)
+            self.timerGoalsAnimation = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(self.animateShow), userInfo: nil, repeats: true)
         }
     }
     
@@ -203,9 +203,9 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         let sizeWillFill = neewSize - headerViewHeightConstraint.constant
         
         if(headerViewHeightConstraint.constant <= neewSize - 60) {
-            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant + 0.02
+            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant + 0.1
         } else if(headerViewHeightConstraint.constant < neewSize && headerViewHeightConstraint.constant < 600) {
-            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant + sizeWillFill/3000 + 0.0001
+            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant + sizeWillFill/1500 + 0.0001
         }
         else {
             self.timerGoalsAnimation.invalidate()
@@ -216,10 +216,10 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         let sizeWillFill = headerViewHeightConstraint.constant - 150
         
         if(headerViewHeightConstraint.constant >= 210) {
-            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant - 0.02
+            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant - 0.1
         }
         else if (headerViewHeightConstraint.constant > 150){
-            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant - sizeWillFill/3000 - 0.001
+            headerViewHeightConstraint.constant = headerViewHeightConstraint.constant - sizeWillFill/1500 - 0.001
         }
         else {
             self.timerGoalsAnimation.invalidate()

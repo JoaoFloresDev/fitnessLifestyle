@@ -838,6 +838,142 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
+  struct string {
+    /// This `R.string.launchScreen` struct is generated, and contains static references to 1 localization keys.
+    struct launchScreen {
+      /// pt-BR translation: My Way
+      ///
+      /// Locales: pt-BR
+      static let evcHfTOpText = Rswift.StringResource(key: "evc-hf-TOp.text", tableName: "LaunchScreen", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+
+      /// pt-BR translation: My Way
+      ///
+      /// Locales: pt-BR
+      static func evcHfTOpText(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("evc-hf-TOp.text", tableName: "LaunchScreen", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "LaunchScreen", preferredLanguages: preferredLanguages) else {
+          return "evc-hf-TOp.text"
+        }
+
+        return NSLocalizedString("evc-hf-TOp.text", tableName: "LaunchScreen", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
+    /// This `R.string.localizable` struct is generated, and contains static references to 0 localization keys.
+    struct localizable {
+      fileprivate init() {}
+    }
+
+    /// This `R.string.main` struct is generated, and contains static references to 5 localization keys.
+    struct main {
+      /// pt-BR translation: Começar
+      ///
+      /// Locales: pt-BR
+      static let cjKGTlKNormalTitle = Rswift.StringResource(key: "5cj-KG-tlK.normalTitle", tableName: "Main", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static let iUsRsXTitle = Rswift.StringResource(key: "71i-Us-RsX.title", tableName: "Main", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static let r9TG5zxTitle = Rswift.StringResource(key: "9r9-tG-5zx.title", tableName: "Main", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static let tgcUlP5bTitle = Rswift.StringResource(key: "Tgc-Ul-p5b.title", tableName: "Main", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static let zqw4uY9BTitle = Rswift.StringResource(key: "Zqw-4u-y9B.title", tableName: "Main", bundle: R.hostingBundle, locales: ["pt-BR"], comment: nil)
+
+      /// pt-BR translation: Começar
+      ///
+      /// Locales: pt-BR
+      static func cjKGTlKNormalTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("5cj-KG-tlK.normalTitle", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "5cj-KG-tlK.normalTitle"
+        }
+
+        return NSLocalizedString("5cj-KG-tlK.normalTitle", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static func iUsRsXTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("71i-Us-RsX.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "71i-Us-RsX.title"
+        }
+
+        return NSLocalizedString("71i-Us-RsX.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static func r9TG5zxTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("9r9-tG-5zx.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "9r9-tG-5zx.title"
+        }
+
+        return NSLocalizedString("9r9-tG-5zx.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static func tgcUlP5bTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Tgc-Ul-p5b.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "Tgc-Ul-p5b.title"
+        }
+
+        return NSLocalizedString("Tgc-Ul-p5b.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      /// pt-BR translation: Item
+      ///
+      /// Locales: pt-BR
+      static func zqw4uY9BTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("Zqw-4u-y9B.title", tableName: "Main", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Main", preferredLanguages: preferredLanguages) else {
+          return "Zqw-4u-y9B.title"
+        }
+
+        return NSLocalizedString("Zqw-4u-y9B.title", tableName: "Main", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
