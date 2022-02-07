@@ -49,7 +49,7 @@ class NotificationSettingsCell: UITableViewCell {
         guard let weekdays = notificationInfo?.weekdays else { return }
         
         if weekdays == NotificationService.shared.arrayForAllWeekdays {
-            infoLabel.text = "Todos os dias"
+            infoLabel.setText(.allDays)
         } else {
             var weekdaysString = ""
             

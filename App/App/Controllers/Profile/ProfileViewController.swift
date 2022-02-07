@@ -19,6 +19,21 @@ import os.log
 class ProfileViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     //    MARK: - IBOutlet
     
+    // Fix labels
+    @IBOutlet weak var resumeLabel: UILabel!
+    @IBOutlet weak var goodHabitsLabel: UILabel!
+    @IBOutlet weak var foodRoutineLabel: UILabel!
+    
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var weightDetailLabel: UIButton!
+    
+    @IBOutlet weak var habitsLabel: UILabel!
+    @IBOutlet weak var habitsDetailLabel: UIButton!
+    
+    @IBOutlet weak var waterLabel: UILabel!
+    @IBOutlet weak var fruitsLabel: UILabel!
+    @IBOutlet weak var physicalExerciseLabel: UILabel!
+    
     //BackgroundImages
     @IBOutlet weak var headerBackgroundImg: UIImageView!
     
@@ -77,6 +92,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
                 headerViewHeightConstraint = constraints
             }
         }
+        setupTexts()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,6 +108,19 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         ProfimeDataMenager().setupHeaderInformations(goalsTextView: myGoalsTextView,currentWeightLabel: currentWeightLabel)
     }
     
+    // MARK: - UI
+    private func setupTexts() {
+        resumeLabel.setText(.resume)
+        goodHabitsLabel.setText(.goodHabits)
+        foodRoutineLabel.setText(.foodRoutine)
+        weightLabel.setText(.weight)
+        weightDetailLabel.setText(.detail)
+        habitsLabel.setText(.habits)
+        habitsDetailLabel.setText(.detail)
+        waterLabel.setText(.water)
+        fruitsLabel.setText(.fruits)
+        physicalExerciseLabel.setText(.physicalExercise)
+    }
     //    MARK: - Graphics
     func setupGraphic() {
         

@@ -363,11 +363,11 @@ class DetailsWeightViewController: UIViewController, UITableViewDelegate,  UITab
     
     //    MARK: - ALERTS
     func alertInsert(success: Bool) {
-        var titleAlert = "Concluido"
-        var messageAlert = "Seus dados foram atualizados"
+        var titleAlert = Text.done.rawValue.localized()
+        var messageAlert = Text.updateProfileData.rawValue.localized()
         if(!success) {
-            titleAlert = "Erro"
-            messageAlert = "Tente novamente"
+            titleAlert = Text.errorTitle.rawValue.localized()
+            messageAlert = Text.errorMessage.rawValue.localized()
         }
         let alert = UIAlertController(title: titleAlert, message: messageAlert, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))

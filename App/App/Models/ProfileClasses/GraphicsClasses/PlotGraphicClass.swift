@@ -315,7 +315,19 @@ class PlotGraphicClass {
     }
     
     func getDatesGraphic(_ months: [[Int]]) -> NSMutableArray {
-        let monthString = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+        let monthString = [Text.jan.rawValue.localized(),
+                           Text.feb.rawValue.localized(),
+                           Text.mar.rawValue.localized(),
+                           Text.apr.rawValue.localized(),
+                           Text.may.rawValue.localized(),
+                           Text.jun.rawValue.localized(),
+                           Text.jul.rawValue.localized(),
+                           Text.aug.rawValue.localized(),
+                           Text.sep.rawValue.localized(),
+                           Text.oct.rawValue.localized(),
+                           Text.nov.rawValue.localized(),
+                           Text.dec.rawValue.localized()]
+        
         let dates: NSMutableArray = []
         for month in months {
             let dateComponents = DateComponents(year: month[1], month: month[0])

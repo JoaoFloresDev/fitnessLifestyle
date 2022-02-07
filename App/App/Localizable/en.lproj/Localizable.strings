@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  App
+
+  Created by Joao Victor Flores da Costa on 07/02/22.
+  Copyright © 2022 Joao Flores. All rights reserved.
+*/
+premiumVersion = "Premium version";
+settings = "Settings";
+done = "Done";
+edit = "Edit";
+save = "Save";
+cancel = "Cancel";
+errorTitle = "Unexpected error";
+errorMessage = "Try again later";
+tryAgain = "Try again";
+
+allDays = "All days";
+start = "Start";
+updateProfileData = "Your data has been updated";
+inserTargetInstruction = "Enter your goals and objectives on the '+' button \n";
+
+// PROFILE
+resume = "Summary";
+goodHabits = "Good Habits";
+foodRoutine = "Food Routine";
+weight = "Weight";
+detail = "Details";
+habits = "Habits";
+water = "Water";
+fruits = "Fruits";
+physicalExercise = "Physical Exercise";
+
+// CALENDAR
+jan = "Jan";
+feb = "Feb";
+mar = "Mar";
+apr = "Apr";
+may = "May";
+jun = "Jun";
+jul = "Jul";
+aug = "Aug";
+sep = "Sep";
+oct = "Oct";
+nov = "Nov";
+dec = "Dec";

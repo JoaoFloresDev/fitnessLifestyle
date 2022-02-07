@@ -475,20 +475,30 @@
                     <connections>
                         <outlet property="currentWeightLabel" destination="hxV-di-iu0" id="SGm-sL-hdM"/>
                         <outlet property="exercicePercentLabel" destination="HGV-xs-3xZ" id="YzN-dY-D8d"/>
+                        <outlet property="foodRoutineLabel" destination="Fp4-yO-wSv" id="Cj9-so-Fzs"/>
+                        <outlet property="fruitsLabel" destination="4CH-0S-lAg" id="rVm-SI-yVC"/>
                         <outlet property="fruitsPercentLabel" destination="UIY-Ih-dg7" id="tNR-va-uPQ"/>
+                        <outlet property="goodHabitsLabel" destination="5of-yy-1gC" id="3mJ-lp-pAp"/>
+                        <outlet property="habitsDetailLabel" destination="GCz-Wi-9qw" id="HgZ-WM-Lhq"/>
                         <outlet property="habitsGraphicLineView" destination="Csh-nT-Ns0" id="YSN-DO-PiB"/>
                         <outlet property="habitsGraphicView" destination="af1-Iv-0J9" id="Le6-0N-kjV"/>
+                        <outlet property="habitsLabel" destination="bPD-w1-qzk" id="oJh-5d-H9C"/>
                         <outlet property="headerBackgroundImg" destination="vsM-TV-avS" id="F00-rJ-Nse"/>
                         <outlet property="headerView" destination="JcI-ly-uZf" id="dLX-lf-2sh"/>
                         <outlet property="meatsGraphicBarsView" destination="MIc-Px-bgd" id="ocm-z8-PW3"/>
                         <outlet property="myGoalsTextView" destination="i6q-79-5wS" id="TPS-3X-UsX"/>
                         <outlet property="nameLabel" destination="qFt-sa-1fW" id="fzF-Tl-kli"/>
+                        <outlet property="physicalExerciseLabel" destination="btN-a1-fd4" id="b0l-Ne-MVk"/>
                         <outlet property="profileImg" destination="51c-Nd-FVz" id="p5U-2E-0Qt"/>
                         <outlet property="profileImgView" destination="QlN-vL-966" id="g1T-xo-cJ0"/>
+                        <outlet property="resumeLabel" destination="ULv-fK-RUT" id="Dke-6T-SU6"/>
                         <outlet property="resumeView" destination="Zk5-eQ-b1Z" id="mfJ-rA-SPn"/>
+                        <outlet property="waterLabel" destination="zGT-5J-QDv" id="W6Y-rd-fbG"/>
                         <outlet property="waterPercentLabel" destination="Shn-pM-OMe" id="4yB-54-qyo"/>
+                        <outlet property="weightDetailLabel" destination="B1T-xO-zM0" id="nSF-bQ-JPW"/>
                         <outlet property="weightGraphicLineView" destination="0o3-y8-bnL" id="H5V-th-kk2"/>
                         <outlet property="weightGraphicView" destination="NYm-tv-6ut" id="1Uq-4Y-g5c"/>
+                        <outlet property="weightLabel" destination="TVf-gG-nCf" id="Uv6-es-1pg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chs-gO-s0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

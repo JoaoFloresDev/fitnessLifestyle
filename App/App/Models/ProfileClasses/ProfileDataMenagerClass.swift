@@ -26,7 +26,7 @@ class ProfimeDataMenager {
     }
     
     func setupHeaderInformations(goalsTextView: UITextView,currentWeightLabel: UILabel) {
-        goalsTextView.text = defaults.string(forKey: "Plain") ?? "Insira suas metas e objetivos no botão '+' \n"
+        goalsTextView.text = defaults.string(forKey: "Plain") ?? Text.inserTargetInstruction.rawValue.localized()
         currentWeightLabel.text = "\(defaults.string(forKey: "Weight") ?? "00") Kg"
     }
     
