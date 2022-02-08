@@ -187,11 +187,11 @@ enum SettingsHeaders {
     var title: String {
         switch self {
         case .tools:
-            return "Ferramentas"
+            return Text.tools.localized()
         case .tutorials:
-            return "Tutoriais"
+            return Text.tutorials.localized()
         case .about:
-            return "Sobre"
+            return Text.aboutTitle.localized()
         }
     }
 }

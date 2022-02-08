@@ -107,6 +107,10 @@ enum Text: String {
     case healthyMeal
     case about
     
+    case tools
+    case tutorials
+    case aboutTitle
+    
     func localized() -> String {
         return self.rawValue.localized()
     }

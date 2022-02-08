@@ -118,4 +118,4 @@ about = "Sobre o aplicativo";
 
 tools = "Ferramentas";
 tutorials = "Tutoriais";
-about = "Sobre";
+aboutTitle = "Sobre";
