@@ -98,6 +98,15 @@ enum Text: String {
     case badTitle
     case badinformationDescription
     
+    case share
+    
+    case shareResults
+    case enableNotifications
+    case editNotifications
+    case howToUse
+    case healthyMeal
+    case about
+    
     func localized() -> String {
         return self.rawValue.localized()
     }

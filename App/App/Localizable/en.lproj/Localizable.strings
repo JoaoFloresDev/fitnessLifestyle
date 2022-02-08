@@ -97,7 +97,7 @@ unexpectedErrorDescription = "Something went wrong, try again!";
 
 insertYourNoteHere = "Insert your note here";
 
-mealsInformationTitle = "O que é uma alimentação:";
+mealsInformationTitle = "What is a meal:";
 
 goodTitle = "Good:";
 goodDescription = "A varied diet, such as rice and beans accompanied by vegetables and leafy vegetables. For snacks, eat fruit instead of cookies, cakes and snacks.";
@@ -107,3 +107,15 @@ midDescription = "A compromise between good and bad food, such as a meal contain
 
 badTitle = "Bad:";
 badDescription = "Ultra-processed foods (sausages, sausage, soft drinks, industrialized ready-to-eat foods, etc.) are high in calories but poor in nutrients. Foods with a lot of salt or sugar should also be avoided.";
+
+share = "Share";
+shareResults = "Share results";
+enableNotifications = "Enable notifications";
+editNotifications = "Notification times";
+howToUse = "How to use";
+healthyMeal = "Healthy meal";
+about = "About the app";
+
+tools = "Tools";
+tutorials = "Tutorials";
+about = "About";

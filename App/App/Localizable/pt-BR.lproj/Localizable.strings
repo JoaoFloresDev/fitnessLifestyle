@@ -107,3 +107,15 @@ midInformationDescription = "Um meio-termo entre a boa e a má alimentação, co
 
 badTitle = "Ruim:";
 badinformationDescription = "Alimentos ultraprocessados (salsicha, linguiça, refrigerantes, comida pronta industrializada, etc) são altamente calóricos porém pobres em nutrientes. Alimentos com muito sal ou muito açúcar também devem ser evitados.";
+
+share = "Compartilhar";
+shareResults = "Compartilhar resultados";
+enableNotifications = "Ativar notificações";
+editNotifications = "Horários de notificações";
+howToUse = "Como utilizar";
+healthyMeal = "Alimentação saudável";
+about = "Sobre o aplicativo";
+
+tools = "Ferramentas";
+tutorials = "Tutoriais";
+about = "Sobre";

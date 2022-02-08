@@ -39,6 +39,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="historyTableView" destination="pEW-oW-Rd0" id="JbB-4K-jAZ"/>
+                        <outlet property="shareButton" destination="oIb-YD-Q76" id="av1-OS-MZJ"/>
                         <segue destination="6GJ-VH-6lH" kind="show" identifier="toRegisterMeal" id="zG8-ve-3EN"/>
                     </connections>
                 </viewController>

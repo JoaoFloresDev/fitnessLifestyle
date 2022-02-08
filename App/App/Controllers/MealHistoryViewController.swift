@@ -12,6 +12,7 @@ import DHSmartScreenshot
 
 class MealHistoryViewController: UIViewController {
     @IBOutlet weak var historyTableView: UITableView!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     var shouldShareWhenPresented = false
     
@@ -37,6 +38,7 @@ class MealHistoryViewController: UIViewController {
             os_log("Couldn't get shared DataHandler.")
         }
         self.title = Text.historic.localized()
+        shareButton.title = Text.share.localized()
     }
     
     override func viewWillAppear(_ animated: Bool) {

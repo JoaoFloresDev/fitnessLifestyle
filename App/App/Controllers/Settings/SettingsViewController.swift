@@ -207,17 +207,17 @@ enum SettingsCells {
     var title: String {
         switch self {
         case .shareResults:
-            return "Compartilhar resultados"
+            return Text.shareResults.localized()
         case .enableNotifications:
-            return "Ativar notificações"
+            return Text.enableNotifications.localized()
         case .notificationSettings:
-            return "Horários de notificações"
+            return Text.editNotifications.localized()
         case .howToUse:
-            return "Como utilizar"
+            return Text.howToUse.localized()
         case .healthyMeal:
-            return "Alimentação saudável"
+            return Text.healthyMeal.localized()
         case .about:
-            return "Sobre o aplicativo"
+            return Text.about.localized()
         }
     }
     
