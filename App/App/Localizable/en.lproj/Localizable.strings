@@ -81,3 +81,18 @@ add = "Add";
 bad = "Bad";
 median = "Mid";
 good = "Good";
+
+badDescription = "My diet was not very healthy. How about trying to eat vegetables or fruits next time?";
+medianDescription = "I didn't eat well or badly. I think I can still improve.";
+goodDescription = "That's right! I ate very well, I hope to keep it that way!";
+
+selectTheRating = "Select the rating";
+selectTheRatingDescription = "Select a rating for your meal.";
+
+saved = "Salved";
+savedDescription = "Your meal has been recorded.";
+
+unexpectedError = "Unexpected error";
+unexpectedErrorDescription = "Something went wrong, try again!";
+
+insertYourNoteHere = "Insert your note here";

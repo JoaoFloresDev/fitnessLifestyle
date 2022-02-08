@@ -126,6 +126,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="bnO-a1-rZx" id="fvI-3b-iSJ"/>
+                        <outlet property="saveButton" destination="zIN-O5-RPQ" id="q5B-fu-Elo"/>
                         <outlet property="textField" destination="Lx1-7c-aIU" id="IrE-NE-DWw"/>
                     </connections>
                 </viewController>

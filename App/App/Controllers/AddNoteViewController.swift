@@ -15,6 +15,8 @@ protocol AddNoteVCDelegate {
 class AddNoteViewController: UIViewController {
 
 	@IBOutlet var textField: UITextField!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     var delegate: AddNoteVCDelegate?
     var note: String?
@@ -24,6 +26,9 @@ class AddNoteViewController: UIViewController {
 
 		textField.delegate = self
         textField.text = note
+        textField.placeholder = Text.insertYourNoteHere.localized()
+        cancelButton.title = Text.cancel.localized()
+        saveButton.title = Text.save.localized()
     }
 	
 	@IBAction func NoteDescriptionEnded(_ sender: Any) {

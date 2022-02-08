@@ -81,3 +81,18 @@ add = "Adicionar";
 bad = "Ruim";
 median = "Média";
 good = "Boa";
+
+badDescription = "Minha alimentação não foi muito saudável. Que tal tentar comer vegetais ou frutas da próxima vez?";
+medianDescription = "Não comi bem nem mal. Acho que ainda posso melhorar.";
+goodDescription = "Isso aí! Comi muito bem, espero continuar assim!";
+
+selectTheRating = "Selecione a avaliação";
+selectTheRatingDescription = "Selecione uma avaliação para sua refeição.";
+
+saved = "Salvo";
+savedDescription = "Sua refeição foi registrada.";
+
+unexpectedError = "Erro inesperado";
+unexpectedErrorDescription = "Algo deu errado, tente novamente!";
+
+insertYourNoteHere = "Insira a sua nota aqui";

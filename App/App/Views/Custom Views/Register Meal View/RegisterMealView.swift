@@ -125,7 +125,9 @@ class RegisterMealView: UIView {
     
     @IBAction func addButtonTapped(_ sender: Any) {
         guard let thisMealRate = thisMealRatingView.selectedRating else {
-            let alert = UIAlertController(title: "Atenção!", message: "Selecione uma avaliação para sua refeição.", preferredStyle: .alert)
+            let alert = UIAlertController(title: Text.selectTheRating.localized(),
+                                          message: Text.selectTheRatingDescription.localized(),
+                                          preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
                 alert.dismiss(animated: true)
             }))
@@ -138,7 +140,9 @@ class RegisterMealView: UIView {
             
             delegate?.saveMeal(quality: thisMealRate.rawValue, hour: hour, minute: minute, note: note)
             
-            let alert = UIAlertController(title: "Salvo!", message: "Sua refeição foi registrada.", preferredStyle: .alert)
+            let alert = UIAlertController(title: Text.saved.localized(),
+                                          message: Text.savedDescription.localized(),
+                                          preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
                 alert.dismiss(animated: true)
                 self.delegate?.dismissVCIfApplicable()
@@ -146,9 +150,9 @@ class RegisterMealView: UIView {
             }))
             delegate?.presentAlert(alert)
         } catch {
-            print("Couldn't get hour and minute from date picker.")
-            
-            let alert = UIAlertController(title: "Ops!", message: "Algo deu errado, tente novamente!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Ops!",
+                                          message: "Algo deu errado, tente novamente!",
+                                          preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
                 alert.dismiss(animated: true)
             }))
