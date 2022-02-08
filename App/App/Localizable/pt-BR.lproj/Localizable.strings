@@ -96,3 +96,14 @@ unexpectedError = "Erro inesperado";
 unexpectedErrorDescription = "Algo deu errado, tente novamente!";
 
 insertYourNoteHere = "Insira a sua nota aqui";
+
+mealsInformationTitle = "O que é uma alimentação:";
+
+goodTitle = "Boa:";
+goodInformationDescription = "Uma alimentação variada, como por exemplo arroz e feijão acompanhados de legumes e vegetais folhosos. Para lanches, comer frutas ao invés de biscoitos, bolos e salgadinhos.";
+
+midTitle = "Média:";
+midInformationDescription = "Um meio-termo entre a boa e a má alimentação, como por exemplo uma refeição contendo legumes e alimentos ultraprocessados.";
+
+badTitle = "Ruim:";
+badinformationDescription = "Alimentos ultraprocessados (salsicha, linguiça, refrigerantes, comida pronta industrializada, etc) são altamente calóricos porém pobres em nutrientes. Alimentos com muito sal ou muito açúcar também devem ser evitados.";

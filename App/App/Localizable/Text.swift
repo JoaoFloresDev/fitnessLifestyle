@@ -90,6 +90,14 @@ enum Text: String {
     
     case insertYourNoteHere
     
+    case mealsInformationTitle
+    case goodTitle
+    case goodInformationDescription
+    case midTitle
+    case midInformationDescription
+    case badTitle
+    case badinformationDescription
+    
     func localized() -> String {
         return self.rawValue.localized()
     }

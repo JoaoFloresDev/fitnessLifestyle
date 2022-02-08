@@ -94,13 +94,13 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `AddDatedMealViewController`, and contains static references to 1 segues.
     struct addDatedMealViewController {
       /// Segue identifier `toAboutMeal`.
-      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, AddDatedMealViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
+      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, AddDatedMealViewController, MealsInformationViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
 
       #if os(iOS) || os(tvOS)
       /// Optionally returns a typed version of segue `toAboutMeal`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, AddDatedMealViewController, UIKit.UIViewController>? {
+      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, AddDatedMealViewController, MealsInformationViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.addDatedMealViewController.toAboutMeal, segue: segue)
       }
       #endif
@@ -145,7 +145,7 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `MealViewController`, and contains static references to 2 segues.
     struct mealViewController {
       /// Segue identifier `toAboutMeal`.
-      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MealViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
+      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MealViewController, MealsInformationViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
       /// Segue identifier `toNoteModal`.
       static let toNoteModal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, MealViewController, AddNoteViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toNoteModal")
 
@@ -153,7 +153,7 @@ struct R: Rswift.Validatable {
       /// Optionally returns a typed version of segue `toAboutMeal`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MealViewController, UIKit.UIViewController>? {
+      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, MealViewController, MealsInformationViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.mealViewController.toAboutMeal, segue: segue)
       }
       #endif
@@ -207,7 +207,7 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `SettingsViewController`, and contains static references to 5 segues.
     struct settingsViewController {
       /// Segue identifier `toAboutMeal`.
-      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SettingsViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
+      static let toAboutMeal: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SettingsViewController, MealsInformationViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toAboutMeal")
       /// Segue identifier `toCredits`.
       static let toCredits: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, SettingsViewController, HowToUseViewController> = Rswift.StoryboardSegueIdentifier(identifier: "toCredits")
       /// Segue identifier `toHowToUse`.
@@ -221,7 +221,7 @@ struct R: Rswift.Validatable {
       /// Optionally returns a typed version of segue `toAboutMeal`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SettingsViewController, UIKit.UIViewController>? {
+      static func toAboutMeal(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, SettingsViewController, MealsInformationViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.settingsViewController.toAboutMeal, segue: segue)
       }
       #endif
@@ -874,8 +874,16 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.localizable` struct is generated, and contains static references to 72 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 77 localization keys.
     struct localizable {
+      /// en translation: A compromise between good and bad food, such as a meal containing vegetables and ultra-processed foods.
+      ///
+      /// Locales: en
+      static let midDescription = Rswift.StringResource(key: "midDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: A varied diet, such as rice and beans accompanied by vegetables and leafy vegetables. For snacks, eat fruit instead of cookies, cakes and snacks.
+      ///
+      /// Locales: en, pt-BR
+      static let goodDescription = Rswift.StringResource(key: "goodDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Add
       ///
       /// Locales: en, pt-BR
@@ -896,6 +904,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let bad = Rswift.StringResource(key: "bad", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Bad:
+      ///
+      /// Locales: en, pt-BR
+      static let badTitle = Rswift.StringResource(key: "badTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Cancel
       ///
       /// Locales: en, pt-BR
@@ -976,6 +988,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let goodHabits = Rswift.StringResource(key: "goodHabits", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Good:
+      ///
+      /// Locales: en, pt-BR
+      static let goodTitle = Rswift.StringResource(key: "goodTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Habit Detail
       ///
       /// Locales: en, pt-BR
@@ -1036,14 +1052,14 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let median = Rswift.StringResource(key: "median", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Mid:
+      ///
+      /// Locales: en, pt-BR
+      static let midTitle = Rswift.StringResource(key: "midTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Mon
       ///
       /// Locales: en, pt-BR
       static let monday = Rswift.StringResource(key: "monday", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
-      /// en translation: My diet was not very healthy. How about trying to eat vegetables or fruits next time?
-      ///
-      /// Locales: en, pt-BR
-      static let badDescription = Rswift.StringResource(key: "badDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: My goals
       ///
       /// Locales: en, pt-BR
@@ -1052,6 +1068,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let nov = Rswift.StringResource(key: "nov", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: O que é uma alimentação:
+      ///
+      /// Locales: en, pt-BR
+      static let mealsInformationTitle = Rswift.StringResource(key: "mealsInformationTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Oct
       ///
       /// Locales: en, pt-BR
@@ -1112,10 +1132,6 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let sunday = Rswift.StringResource(key: "sunday", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
-      /// en translation: That's right! I ate very well, I hope to keep it that way!
-      ///
-      /// Locales: en, pt-BR
-      static let goodDescription = Rswift.StringResource(key: "goodDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Thu
       ///
       /// Locales: en, pt-BR
@@ -1132,6 +1148,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let tuesday = Rswift.StringResource(key: "tuesday", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Ultra-processed foods (sausages, sausage, soft drinks, industrialized ready-to-eat foods, etc.) are high in calories but poor in nutrients. Foods with a lot of salt or sugar should also be avoided.
+      ///
+      /// Locales: en, pt-BR
+      static let badDescription = Rswift.StringResource(key: "badDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Unexpected error
       ///
       /// Locales: en, pt-BR
@@ -1164,6 +1184,36 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let savedDescription = Rswift.StringResource(key: "savedDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+
+      /// en translation: A compromise between good and bad food, such as a meal containing vegetables and ultra-processed foods.
+      ///
+      /// Locales: en
+      static func midDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("midDescription", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "midDescription"
+        }
+
+        return NSLocalizedString("midDescription", bundle: bundle, comment: "")
+      }
+
+      /// en translation: A varied diet, such as rice and beans accompanied by vegetables and leafy vegetables. For snacks, eat fruit instead of cookies, cakes and snacks.
+      ///
+      /// Locales: en, pt-BR
+      static func goodDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("goodDescription", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "goodDescription"
+        }
+
+        return NSLocalizedString("goodDescription", bundle: bundle, comment: "")
+      }
 
       /// en translation: Add
       ///
@@ -1238,6 +1288,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("bad", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Bad:
+      ///
+      /// Locales: en, pt-BR
+      static func badTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("badTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "badTitle"
+        }
+
+        return NSLocalizedString("badTitle", bundle: bundle, comment: "")
       }
 
       /// en translation: Cancel
@@ -1540,6 +1605,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("goodHabits", bundle: bundle, comment: "")
       }
 
+      /// en translation: Good:
+      ///
+      /// Locales: en, pt-BR
+      static func goodTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("goodTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "goodTitle"
+        }
+
+        return NSLocalizedString("goodTitle", bundle: bundle, comment: "")
+      }
+
       /// en translation: Habit Detail
       ///
       /// Locales: en, pt-BR
@@ -1765,6 +1845,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("median", bundle: bundle, comment: "")
       }
 
+      /// en translation: Mid:
+      ///
+      /// Locales: en, pt-BR
+      static func midTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("midTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "midTitle"
+        }
+
+        return NSLocalizedString("midTitle", bundle: bundle, comment: "")
+      }
+
       /// en translation: Mon
       ///
       /// Locales: en, pt-BR
@@ -1778,21 +1873,6 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("monday", bundle: bundle, comment: "")
-      }
-
-      /// en translation: My diet was not very healthy. How about trying to eat vegetables or fruits next time?
-      ///
-      /// Locales: en, pt-BR
-      static func badDescription(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("badDescription", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "badDescription"
-        }
-
-        return NSLocalizedString("badDescription", bundle: bundle, comment: "")
       }
 
       /// en translation: My goals
@@ -1823,6 +1903,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("nov", bundle: bundle, comment: "")
+      }
+
+      /// en translation: O que é uma alimentação:
+      ///
+      /// Locales: en, pt-BR
+      static func mealsInformationTitle(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("mealsInformationTitle", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "mealsInformationTitle"
+        }
+
+        return NSLocalizedString("mealsInformationTitle", bundle: bundle, comment: "")
       }
 
       /// en translation: Oct
@@ -2050,21 +2145,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("sunday", bundle: bundle, comment: "")
       }
 
-      /// en translation: That's right! I ate very well, I hope to keep it that way!
-      ///
-      /// Locales: en, pt-BR
-      static func goodDescription(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("goodDescription", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "goodDescription"
-        }
-
-        return NSLocalizedString("goodDescription", bundle: bundle, comment: "")
-      }
-
       /// en translation: Thu
       ///
       /// Locales: en, pt-BR
@@ -2123,6 +2203,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("tuesday", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Ultra-processed foods (sausages, sausage, soft drinks, industrialized ready-to-eat foods, etc.) are high in calories but poor in nutrients. Foods with a lot of salt or sugar should also be avoided.
+      ///
+      /// Locales: en, pt-BR
+      static func badDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("badDescription", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "badDescription"
+        }
+
+        return NSLocalizedString("badDescription", bundle: bundle, comment: "")
       }
 
       /// en translation: Unexpected error
@@ -2685,11 +2780,11 @@ struct _R: Rswift.Validatable {
     struct settings: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
 
-      let aboutMeal = StoryboardViewControllerResource<UIKit.UIViewController>(identifier: "aboutMeal")
+      let aboutMeal = StoryboardViewControllerResource<MealsInformationViewController>(identifier: "aboutMeal")
       let bundle = R.hostingBundle
       let name = "Settings"
 
-      func aboutMeal(_: Void = ()) -> UIKit.UIViewController? {
+      func aboutMeal(_: Void = ()) -> MealsInformationViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: aboutMeal)
       }
 
@@ -2709,7 +2804,7 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "MediumColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'MediumColor' is used in storyboard 'Settings', but couldn't be loaded.") }
           if UIKit.UIColor(named: "PrimaryTextColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'PrimaryTextColor' is used in storyboard 'Settings', but couldn't be loaded.") }
         }
-        if _R.storyboard.settings().aboutMeal() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'aboutMeal' could not be loaded from storyboard 'Settings' as 'UIKit.UIViewController'.") }
+        if _R.storyboard.settings().aboutMeal() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'aboutMeal' could not be loaded from storyboard 'Settings' as 'MealsInformationViewController'.") }
       }
 
       fileprivate init() {}

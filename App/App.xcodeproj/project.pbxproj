@@ -12,6 +12,7 @@
 		732854BD27B1C5D300B406C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 732854BF27B1C5D300B406C4 /* Localizable.strings */; };
 		732854C327B1C88200B406C4 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732854C227B1C88200B406C4 /* Text.swift */; };
 		732854C527B1C90700B406C4 /* Localizable+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732854C427B1C90700B406C4 /* Localizable+extensions.swift */; };
+		73BAC01F27B2110A00ED603C /* MealsInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BAC01E27B2110A00ED603C /* MealsInformationViewController.swift */; };
 		810224622451B1AA00CD7BC0 /* DataHandler+Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810224612451B1AA00CD7BC0 /* DataHandler+Meal.swift */; };
 		810518992450746A00F8A86E /* DataHandler+Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810518982450746A00F8A86E /* DataHandler+Diary.swift */; };
 		8105189C24507BB600F8A86E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8105189B24507BB600F8A86E /* Date.swift */; };
@@ -119,6 +120,7 @@
 		732854C027B1C5D500B406C4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		732854C227B1C88200B406C4 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		732854C427B1C90700B406C4 /* Localizable+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizable+extensions.swift"; sourceTree = "<group>"; };
+		73BAC01E27B2110A00ED603C /* MealsInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsInformationViewController.swift; sourceTree = "<group>"; };
 		810224612451B1AA00CD7BC0 /* DataHandler+Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataHandler+Meal.swift"; sourceTree = "<group>"; };
 		810518982450746A00F8A86E /* DataHandler+Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataHandler+Diary.swift"; sourceTree = "<group>"; };
 		8105189B24507BB600F8A86E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				D7FC5D452462E68C00FB5B81 /* MealHistoryViewController.swift */,
 				D7720E492465A149004BC3DA /* AddDatedMealViewController.swift */,
 				8DCA3A4A24699AB4009125B4 /* AddNoteViewController.swift */,
+				73BAC01E27B2110A00ED603C /* MealsInformationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -931,6 +934,7 @@
 				C44D146A243655BA0094497A /* AppDelegate.swift in Sources */,
 				C46813932489461E00790B5B /* HowToUseViewController.swift in Sources */,
 				812E8E56245703330041719F /* DateCell.swift in Sources */,
+				73BAC01F27B2110A00ED603C /* MealsInformationViewController.swift in Sources */,
 				D7FC5D462462E68C00FB5B81 /* MealHistoryViewController.swift in Sources */,
 				C44D146C243655BA0094497A /* SceneDelegate.swift in Sources */,
 				D7D38E822485532A00E84CD7 /* NotificationSettingsCell.swift in Sources */,

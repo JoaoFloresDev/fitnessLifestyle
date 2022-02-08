@@ -36,6 +36,7 @@ class MealHistoryViewController: UIViewController {
         } catch {
             os_log("Couldn't get shared DataHandler.")
         }
+        self.title = Text.historic.localized()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,7 +99,6 @@ class MealHistoryViewController: UIViewController {
     
     func shareScreenshot() {
         let screenshot = historyTableView.screenshot()
-        
         let items: [Any] = [screenshot]
         let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
         present(ac, animated: true)

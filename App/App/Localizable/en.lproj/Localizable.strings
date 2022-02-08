@@ -96,3 +96,14 @@ unexpectedError = "Unexpected error";
 unexpectedErrorDescription = "Something went wrong, try again!";
 
 insertYourNoteHere = "Insert your note here";
+
+mealsInformationTitle = "O que é uma alimentação:";
+
+goodTitle = "Good:";
+goodDescription = "A varied diet, such as rice and beans accompanied by vegetables and leafy vegetables. For snacks, eat fruit instead of cookies, cakes and snacks.";
+
+midTitle = "Mid:";
+midDescription = "A compromise between good and bad food, such as a meal containing vegetables and ultra-processed foods.";
+
+badTitle = "Bad:";
+badDescription = "Ultra-processed foods (sausages, sausage, soft drinks, industrialized ready-to-eat foods, etc.) are high in calories but poor in nutrients. Foods with a lot of salt or sugar should also be avoided.";
