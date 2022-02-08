@@ -629,7 +629,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Qbn-NS-HN8"/>
                     <connections>
+                        <outlet property="clearLabel" destination="UFf-T5-Lqa" id="fF6-c1-Ezs"/>
+                        <outlet property="myTargetsLabel" destination="dqk-mZ-TvR" id="bjg-3c-oid"/>
+                        <outlet property="navBar" destination="b1U-Dh-lhu" id="UXE-QA-80s"/>
                         <outlet property="plainingTextView" destination="Ibg-g8-eZb" id="aQ6-Or-gQ6"/>
+                        <outlet property="weightLabel" destination="1YF-BE-DDG" id="KSM-3z-NZ5"/>
                         <outlet property="weightTextField" destination="hsj-5L-N4J" id="fW4-qo-123"/>
                     </connections>
                 </viewController>
@@ -882,7 +886,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utr-ZP-ki5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
-                                    <navigationItem title="Detalhes Peso" id="u53-9G-z9J">
+                                    <navigationItem title="Detalhes Hábitos" id="u53-9G-z9J">
                                         <barButtonItem key="leftBarButtonItem" title="Fechar" id="SmH-Pq-Yzd">
                                             <connections>
                                                 <action selector="closeView:" destination="hyd-fu-1qT" id="UMk-29-ntY"/>

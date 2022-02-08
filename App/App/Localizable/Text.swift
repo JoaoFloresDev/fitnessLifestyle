@@ -43,4 +43,9 @@ enum Text: String {
     case oct
     case nov
     case dec
+    case myTargets
+    case clear
+    case close
+    case weightDetail
+    case habitDetail
 }

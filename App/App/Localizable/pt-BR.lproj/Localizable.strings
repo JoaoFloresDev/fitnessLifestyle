@@ -45,3 +45,10 @@ sep = "Set";
 oct = "Out";
 nov = "Nov";
 dec = "Dez";
+
+// WEIGHT
+myTargets = "Meus objetivos";
+clear = "Limpar";
+close = "Fechar";
+weightDetail = "Detalhes Peso";
+habitDetail = "Detalhes Hábitos";

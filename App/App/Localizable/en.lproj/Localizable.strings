@@ -44,3 +44,10 @@ sep = "Sep";
 oct = "Oct";
 nov = "Nov";
 dec = "Dec";
+
+// WEIGHT
+myTargets = "My goals";
+clear = "Clear";
+close = "Close";
+weightDetail = "Weight Details";
+habitDetail = "Habit Detail";

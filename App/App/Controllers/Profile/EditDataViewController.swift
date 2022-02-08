@@ -17,6 +17,12 @@ class EditDataViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var defaults = UserDefaults.standard
     
     // MARK: - IBOutlets
+    // Fix labels
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var myTargetsLabel: UILabel!
+    @IBOutlet weak var clearLabel: UIButton!
+    @IBOutlet weak var navBar: UINavigationBar!
+    
     // Interface builder outlets
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var plainingTextView: UITextView!
@@ -74,6 +80,13 @@ class EditDataViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+        navBar.topItem?.leftBarButtonItem?.title = Text.cancel.rawValue.localized()
+        navBar.topItem?.rightBarButtonItem?.title  = Text.save.rawValue.localized()
+        
+        weightLabel.setText(.weight)
+        myTargetsLabel.setText(.myTargets)
+        clearLabel.setText(.clear)
     }
     
     @objc func adjustForKeyboard(notification: Notification) {

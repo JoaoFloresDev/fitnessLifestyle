@@ -56,6 +56,8 @@ class DetailsWeightViewController: UIViewController, UITableViewDelegate,  UITab
         loadData()
         setupTableView()
         setupPickerView()
+        detaisNavigation.leftBarButtonItem?.title = Text.close.rawValue.localized()
+        self.title = Text.weightDetail.rawValue.localized()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

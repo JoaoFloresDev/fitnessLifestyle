@@ -16,7 +16,6 @@ class DetaisHabitsViewController: UIViewController, UITableViewDelegate,  UITabl
     let viewInsertWeightHeight: CGFloat = 53
     let timeAnimation = 0.5
     let cornerRadiusViews: CGFloat = 10
-    
     let tagLabelValueWater = 1000
     let tagLabelValueFruits = 2000
     let tagLabelValueExercise = 3000
@@ -65,6 +64,8 @@ class DetaisHabitsViewController: UIViewController, UITableViewDelegate,  UITabl
         loadData()
         setupTableView()
         setupPickerView()
+        detaisNavigation.title = Text.habitDetail.rawValue.localized()
+        detaisNavigation.leftBarButtonItem?.title = Text.close.rawValue.localized()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
