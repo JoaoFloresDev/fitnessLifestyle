@@ -15,9 +15,9 @@ enum Rating: Int {
     
     var title: String {
         switch self {
-        case .bad:      return "Ruim"
-        case .average:  return "Média"
-        case .good:     return "Boa"
+        case .bad:      return Text.bad.localized()
+        case .average:  return Text.median.localized()
+        case .good:     return Text.good.localized()
         }
     }
     

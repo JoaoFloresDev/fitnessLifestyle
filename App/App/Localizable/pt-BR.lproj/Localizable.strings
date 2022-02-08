@@ -68,3 +68,16 @@ sunday = "Dom";
 diary = "Diário";
 foodRotineDescription = "Insira a qualidade da alimentação no dia";
 habitDescription = "Insira os hábitos praticados no dia";
+
+drinkWaterAction = "Tomei água";
+exerciseAction = "Pratiquei exercícios físicos";
+fruitAction = "Comi frutas";
+
+meal = "Refeição";
+mealDescription = "Insira a qualidade da refeição";
+mealTime = "Insira o horário da refeição";
+add = "Adicionar";
+
+bad = "Ruim";
+median = "Média";
+good = "Boa";

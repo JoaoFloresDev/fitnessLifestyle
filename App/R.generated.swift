@@ -874,8 +874,12 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.localizable` struct is generated, and contains static references to 52 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 62 localization keys.
     struct localizable {
+      /// en translation: Add
+      ///
+      /// Locales: en, pt-BR
+      static let add = Rswift.StringResource(key: "add", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: All days
       ///
       /// Locales: en, pt-BR
@@ -888,6 +892,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let aug = Rswift.StringResource(key: "aug", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Bad
+      ///
+      /// Locales: en, pt-BR
+      static let bad = Rswift.StringResource(key: "bad", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Cancel
       ///
       /// Locales: en, pt-BR
@@ -908,7 +916,7 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let detail = Rswift.StringResource(key: "detail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
-      /// en translation: Diário
+      /// en translation: Diary
       ///
       /// Locales: en, pt-BR
       static let diary = Rswift.StringResource(key: "diary", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
@@ -916,10 +924,30 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let done = Rswift.StringResource(key: "done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Drink water
+      ///
+      /// Locales: en, pt-BR
+      static let drinkWaterAction = Rswift.StringResource(key: "drinkWaterAction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Eat fruits
+      ///
+      /// Locales: en, pt-BR
+      static let fruitAction = Rswift.StringResource(key: "fruitAction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Edit
       ///
       /// Locales: en, pt-BR
       static let edit = Rswift.StringResource(key: "edit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Enter meal quality
+      ///
+      /// Locales: en, pt-BR
+      static let mealDescription = Rswift.StringResource(key: "mealDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Enter meal time
+      ///
+      /// Locales: en, pt-BR
+      static let mealTime = Rswift.StringResource(key: "mealTime", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Enter the quality of food in the day
+      ///
+      /// Locales: en, pt-BR
+      static let foodRotineDescription = Rswift.StringResource(key: "foodRotineDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Enter your goals and objectives on the '+' button  
       ///
       /// Locales: en, pt-BR
@@ -940,6 +968,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let fruits = Rswift.StringResource(key: "fruits", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Good
+      ///
+      /// Locales: en, pt-BR
+      static let good = Rswift.StringResource(key: "good", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Good Habits
       ///
       /// Locales: en, pt-BR
@@ -956,11 +988,7 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let historic = Rswift.StringResource(key: "historic", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
-      /// en translation: Insira a qualidade da alimentação no dia
-      ///
-      /// Locales: en, pt-BR
-      static let foodRotineDescription = Rswift.StringResource(key: "foodRotineDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
-      /// en translation: Insira os hábitos praticados no dia
+      /// en translation: Insert the habits practiced in the day
       ///
       /// Locales: en, pt-BR
       static let habitDescription = Rswift.StringResource(key: "habitDescription", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
@@ -984,6 +1012,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let may = Rswift.StringResource(key: "may", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Meal
+      ///
+      /// Locales: en, pt-BR
+      static let meal = Rswift.StringResource(key: "meal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Meal Date
       ///
       /// Locales: en, pt-BR
@@ -992,6 +1024,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let weekDayMeals = Rswift.StringResource(key: "weekDayMeals", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Mid
+      ///
+      /// Locales: en, pt-BR
+      static let median = Rswift.StringResource(key: "median", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Mon
       ///
       /// Locales: en, pt-BR
@@ -1008,6 +1044,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, pt-BR
       static let oct = Rswift.StringResource(key: "oct", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
+      /// en translation: Physical Exercise
+      ///
+      /// Locales: en, pt-BR
+      static let exerciseAction = Rswift.StringResource(key: "exerciseAction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
       /// en translation: Physical Exercise
       ///
       /// Locales: en, pt-BR
@@ -1085,6 +1125,21 @@ struct R: Rswift.Validatable {
       /// Locales: en, pt-BR
       static let updateProfileData = Rswift.StringResource(key: "updateProfileData", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "pt-BR"], comment: nil)
 
+      /// en translation: Add
+      ///
+      /// Locales: en, pt-BR
+      static func add(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("add", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "add"
+        }
+
+        return NSLocalizedString("add", bundle: bundle, comment: "")
+      }
+
       /// en translation: All days
       ///
       /// Locales: en, pt-BR
@@ -1128,6 +1183,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("aug", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Bad
+      ///
+      /// Locales: en, pt-BR
+      static func bad(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("bad", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "bad"
+        }
+
+        return NSLocalizedString("bad", bundle: bundle, comment: "")
       }
 
       /// en translation: Cancel
@@ -1205,7 +1275,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("detail", bundle: bundle, comment: "")
       }
 
-      /// en translation: Diário
+      /// en translation: Diary
       ///
       /// Locales: en, pt-BR
       static func diary(preferredLanguages: [String]? = nil) -> String {
@@ -1235,6 +1305,36 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("done", bundle: bundle, comment: "")
       }
 
+      /// en translation: Drink water
+      ///
+      /// Locales: en, pt-BR
+      static func drinkWaterAction(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("drinkWaterAction", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "drinkWaterAction"
+        }
+
+        return NSLocalizedString("drinkWaterAction", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Eat fruits
+      ///
+      /// Locales: en, pt-BR
+      static func fruitAction(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("fruitAction", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "fruitAction"
+        }
+
+        return NSLocalizedString("fruitAction", bundle: bundle, comment: "")
+      }
+
       /// en translation: Edit
       ///
       /// Locales: en, pt-BR
@@ -1248,6 +1348,51 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("edit", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Enter meal quality
+      ///
+      /// Locales: en, pt-BR
+      static func mealDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("mealDescription", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "mealDescription"
+        }
+
+        return NSLocalizedString("mealDescription", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Enter meal time
+      ///
+      /// Locales: en, pt-BR
+      static func mealTime(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("mealTime", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "mealTime"
+        }
+
+        return NSLocalizedString("mealTime", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Enter the quality of food in the day
+      ///
+      /// Locales: en, pt-BR
+      static func foodRotineDescription(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("foodRotineDescription", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "foodRotineDescription"
+        }
+
+        return NSLocalizedString("foodRotineDescription", bundle: bundle, comment: "")
       }
 
       /// en translation: Enter your goals and objectives on the '+' button  
@@ -1325,6 +1470,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("fruits", bundle: bundle, comment: "")
       }
 
+      /// en translation: Good
+      ///
+      /// Locales: en, pt-BR
+      static func good(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("good", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "good"
+        }
+
+        return NSLocalizedString("good", bundle: bundle, comment: "")
+      }
+
       /// en translation: Good Habits
       ///
       /// Locales: en, pt-BR
@@ -1385,22 +1545,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("historic", bundle: bundle, comment: "")
       }
 
-      /// en translation: Insira a qualidade da alimentação no dia
-      ///
-      /// Locales: en, pt-BR
-      static func foodRotineDescription(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("foodRotineDescription", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "foodRotineDescription"
-        }
-
-        return NSLocalizedString("foodRotineDescription", bundle: bundle, comment: "")
-      }
-
-      /// en translation: Insira os hábitos praticados no dia
+      /// en translation: Insert the habits practiced in the day
       ///
       /// Locales: en, pt-BR
       static func habitDescription(preferredLanguages: [String]? = nil) -> String {
@@ -1490,6 +1635,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("may", bundle: bundle, comment: "")
       }
 
+      /// en translation: Meal
+      ///
+      /// Locales: en, pt-BR
+      static func meal(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("meal", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "meal"
+        }
+
+        return NSLocalizedString("meal", bundle: bundle, comment: "")
+      }
+
       /// en translation: Meal Date
       ///
       /// Locales: en, pt-BR
@@ -1518,6 +1678,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("weekDayMeals", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Mid
+      ///
+      /// Locales: en, pt-BR
+      static func median(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("median", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "median"
+        }
+
+        return NSLocalizedString("median", bundle: bundle, comment: "")
       }
 
       /// en translation: Mon
@@ -1578,6 +1753,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("oct", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Physical Exercise
+      ///
+      /// Locales: en, pt-BR
+      static func exerciseAction(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("exerciseAction", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "exerciseAction"
+        }
+
+        return NSLocalizedString("exerciseAction", bundle: bundle, comment: "")
       }
 
       /// en translation: Physical Exercise

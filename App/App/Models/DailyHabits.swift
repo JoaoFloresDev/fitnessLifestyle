@@ -15,9 +15,9 @@ enum DailyHabits: String {
     
     var title: String {
         switch self {
-        case .drinkWater:   return "Tomei água"
-        case .exercise:     return "Pratiquei exercícios físicos"
-        case .fruit:        return "Comi frutas"
+        case .drinkWater:   return Text.drinkWaterAction.localized()
+        case .exercise:     return Text.drinkWaterAction.localized()
+        case .fruit:        return Text.fruitAction.localized()
         }
     }
     

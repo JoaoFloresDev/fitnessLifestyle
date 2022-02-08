@@ -56,7 +56,6 @@ class SingleHabitView: UIView {
         selectionBarView.backgroundColor = isSelected ? habit.color : .clear
         iconView.tintColor = isSelected ? habit.color : .lightGray
         
-        selectionBarView.cornerRadius = selectionBarView.bounds.height / 2
         iconView.image = habit.icon?.withRenderingMode(.alwaysTemplate)
         titleLabel.text = habit.title
     }

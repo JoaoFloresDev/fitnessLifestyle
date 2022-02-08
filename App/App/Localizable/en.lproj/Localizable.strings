@@ -68,3 +68,16 @@ sunday = "Sun";
 diary = "Diary";
 foodRotineDescription = "Enter the quality of food in the day";
 habitDescription = "Insert the habits practiced in the day";
+
+drinkWaterAction = "Drink water";
+exerciseAction = "Physical Exercise";
+fruitAction = "Eat fruits";
+
+meal = "Meal";
+mealDescription = "Enter meal quality";
+mealTime = "Enter meal time";
+add = "Add";
+
+bad = "Bad";
+median = "Mid";
+good = "Good";

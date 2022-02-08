@@ -65,4 +65,20 @@ enum Text: String {
     case foodRotine
     case foodRotineDescription
     case habitDescription
+    
+    case drinkWaterAction
+    case exerciseAction
+    case fruitAction
+    case meal
+    case mealDescription
+    case add
+    case mealTime
+    
+    case bad
+    case median
+    case good
+    
+    func localized() -> String {
+        return self.rawValue.localized()
+    }
 }

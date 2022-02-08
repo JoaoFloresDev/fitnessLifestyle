@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterMealView" customModule="My_Way" customModuleProvider="target">
             <connections>
+                <outlet property="addButton" destination="1r5-m7-dly" id="QWp-tm-1hh"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="Az5-OQ-xxk"/>
                 <outlet property="datePicker" destination="Iw9-D2-w3d" id="nQ4-62-blG"/>
                 <outlet property="finishButton" destination="1r5-m7-dly" id="ETp-Vh-VZE"/>
+                <outlet property="mealDescriptionLabel" destination="G8U-Q0-PKE" id="EQh-M1-qEN"/>
+                <outlet property="mealLabel" destination="jJk-lf-sOO" id="CWj-ky-0nR"/>
+                <outlet property="mealTimeDescription" destination="eaK-yw-PKf" id="cTG-Dk-gwj"/>
                 <outlet property="noteTableView" destination="4IU-TN-8a3" id="C6w-gW-Ljk"/>
                 <outlet property="thisMealRatingView" destination="pzl-DW-ErW" id="WbV-7u-Nqa"/>
             </connections>
@@ -35,14 +41,14 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <size key="titleShadowOffset" width="-1" height="0.0"/>
                                     <state key="normal" image="square.and.pencil" catalog="system">
-                                        <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" systemColor="systemBlueColor"/>
                                     </state>
                                     <connections>
                                         <action selector="addNoteTapped:" destination="-1" eventType="touchUpInside" id="LGN-rE-gEG"/>
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refeição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJk-lf-sOO">
-                                    <rect key="frame" x="137" y="0.0" width="99" height="29"/>
+                                    <rect key="frame" x="137.5" y="0.0" width="98" height="29"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="29" id="1h6-tD-fdv"/>
                                     </constraints>
@@ -108,7 +114,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="eaK-yw-PKf" firstAttribute="leading" secondItem="Mxk-pd-iLj" secondAttribute="leading" id="10S-9P-Nt4"/>
                                 <constraint firstItem="eaK-yw-PKf" firstAttribute="top" secondItem="Mxk-pd-iLj" secondAttribute="top" constant="8" id="FfG-EO-AM8"/>
@@ -128,12 +134,12 @@
                         </datePicker>
                         <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4IU-TN-8a3">
                             <rect key="frame" x="17.5" y="782" width="379" height="88"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="88" id="bzh-MX-FoC"/>
                             </constraints>
                         </tableView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-m7-dly" customClass="RoundedButton" customModule="My_Way" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-m7-dly" customClass="RoundedButton" customModule="My_Way" customModuleProvider="target">
                             <rect key="frame" x="17.5" y="786" width="379" height="44"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -149,7 +155,7 @@
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="value" systemColor="systemBlueColor"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
@@ -178,8 +184,19 @@
             <point key="canvasLocation" x="139" y="79"/>
         </view>
     </objects>
+    <designables>
+        <designable name="1r5-m7-dly">
+            <size key="intrinsicContentSize" width="78" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

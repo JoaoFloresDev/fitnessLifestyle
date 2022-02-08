@@ -13,6 +13,10 @@ protocol DailyHabitsViewDelegate {
 }
 
 class DailyHabitsView: UIView {
+    
+    // Fix labels
+    
+    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var todayRatingView: RatingView!
     @IBOutlet weak var groupedHabitsView: GroupedHabitsView!

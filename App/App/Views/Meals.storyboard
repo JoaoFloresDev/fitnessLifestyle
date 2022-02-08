@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o7q-eH-PVj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o7q-eH-PVj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,6 +55,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="4tv-Ha-bBl"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="QKW-hz-2Gt"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6hK-ls-JFJ" firstAttribute="width" secondItem="fsr-kU-GDi" secondAttribute="width" multiplier="0.96" id="0gA-sT-LVu"/>
@@ -62,7 +65,6 @@
                             <constraint firstItem="QKW-hz-2Gt" firstAttribute="top" secondItem="H4M-09-hoa" secondAttribute="top" id="g8A-da-D1V"/>
                             <constraint firstItem="H4M-09-hoa" firstAttribute="bottom" secondItem="QKW-hz-2Gt" secondAttribute="bottom" id="gYD-CY-5BF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QKW-hz-2Gt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Diário" image="plus.app.fill" catalog="system" selectedImage="plus.app.fill" id="hBw-ep-HBC"/>
                     <navigationItem key="navigationItem" title="Diário" id="fRA-BY-ahR"/>
@@ -111,7 +113,8 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ygl-FK-RnB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lx1-7c-aIU" firstAttribute="leading" secondItem="ygl-FK-RnB" secondAttribute="leading" constant="16" id="2vU-7p-QIm"/>
                             <constraint firstItem="PnG-Vs-tD9" firstAttribute="top" secondItem="ygl-FK-RnB" secondAttribute="top" id="3RH-RE-Y2H"/>
@@ -121,7 +124,6 @@
                             <constraint firstItem="PnG-Vs-tD9" firstAttribute="trailing" secondItem="ygl-FK-RnB" secondAttribute="trailing" id="Vuq-IM-QMu"/>
                             <constraint firstItem="Lx1-7c-aIU" firstAttribute="top" secondItem="PnG-Vs-tD9" secondAttribute="bottom" constant="16" id="hC3-rB-wOk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ygl-FK-RnB"/>
                     </view>
                     <connections>
                         <outlet property="textField" destination="Lx1-7c-aIU" id="IrE-NE-DWw"/>
@@ -153,5 +155,8 @@
     </scenes>
     <resources>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

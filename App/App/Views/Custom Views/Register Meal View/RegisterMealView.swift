@@ -23,6 +23,11 @@ class RegisterMealView: UIView {
     @IBOutlet weak var noteTableView: UITableView!
     @IBOutlet weak var finishButton: RoundedButton!
     
+    @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var mealDescriptionLabel: UILabel!
+    @IBOutlet weak var mealTimeDescription: UILabel!
+    @IBOutlet weak var addButton: RoundedButton!
+    
     var delegate: RegisterMealViewDelegate?
     var note: String? {
         didSet {
@@ -56,6 +61,11 @@ class RegisterMealView: UIView {
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
         setTableView()
+        
+        mealLabel.setText(.meal)
+        mealDescriptionLabel.setText(.mealDescription)
+        mealTimeDescription.setText(.mealTime)
+        addButton.setText(.add)
     }
 
 // MARK: - Methods
@@ -99,6 +109,7 @@ class RegisterMealView: UIView {
     }
     
 // MARK: - Actions
+    
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
         selectedDate = sender.date
         noteTableView.reloadData()
