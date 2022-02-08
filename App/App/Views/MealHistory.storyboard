@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8nu-Qx-oFa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8nu-Qx-oFa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="n5y-6g-KRe"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pEW-oW-Rd0" firstAttribute="top" secondItem="n5y-6g-KRe" secondAttribute="top" id="2SB-gd-6Vx"/>
@@ -27,7 +29,6 @@
                             <constraint firstItem="n5y-6g-KRe" firstAttribute="trailing" secondItem="pEW-oW-Rd0" secondAttribute="trailing" constant="16" id="bUK-kK-UD7"/>
                             <constraint firstItem="n5y-6g-KRe" firstAttribute="bottom" secondItem="pEW-oW-Rd0" secondAttribute="bottom" id="rq8-0T-VMA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="n5y-6g-KRe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Histórico" id="dUK-vJ-DCt" userLabel="Histórico">
                         <barButtonItem key="rightBarButtonItem" title="Compartilhar" id="oIb-YD-Q76">
@@ -63,7 +64,7 @@
                                                 <rect key="frame" x="0.0" y="8" width="397" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data da Refeição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-LL-2r7">
-                                                        <rect key="frame" x="106" y="0.0" width="185" height="29"/>
+                                                        <rect key="frame" x="107" y="0.0" width="183.5" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="Z7U-h6-www"/>
                                                         </constraints>
@@ -112,6 +113,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bCn-hP-9vJ"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dKR-3X-L70" firstAttribute="top" secondItem="bCn-hP-9vJ" secondAttribute="top" id="67a-Nt-z6Z"/>
@@ -119,11 +121,11 @@
                             <constraint firstItem="dKR-3X-L70" firstAttribute="width" secondItem="p8o-e2-QES" secondAttribute="width" multiplier="0.96" id="DCO-7O-r2U"/>
                             <constraint firstItem="dKR-3X-L70" firstAttribute="centerX" secondItem="p8o-e2-QES" secondAttribute="centerX" id="ev8-xh-9gU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bCn-hP-9vJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="m9p-f4-VMX"/>
                     <connections>
                         <outlet property="datePicker" destination="hUD-pG-dXr" id="1V7-aA-TkC"/>
+                        <outlet property="foodTime" destination="Gef-LL-2r7" id="oWh-Be-qZd"/>
                         <outlet property="registerMealView" destination="e5J-mQ-4Bh" id="dRC-EW-uA8"/>
                         <segue destination="Erh-ba-bNs" kind="show" identifier="toAboutMeal" id="tjP-BW-MDf"/>
                     </connections>

@@ -52,3 +52,19 @@ clear = "Limpar";
 close = "Fechar";
 weightDetail = "Detalhes Peso";
 habitDetail = "Detalhes Hábitos";
+foodTime = "Data da Refeição";
+
+historic = "Histórico";
+weekDayMeals = "Refeições: dia firstDay a lastDay";
+
+monday = "Seg";
+tuesday = "Ter";
+wednesday = "Qua";
+thursday = "Qui";
+friday = "Sex";
+saturday = "Sab";
+sunday = "Dom";
+
+diary = "Diário";
+foodRotineDescription = "Insira a qualidade da alimentação no dia";
+habitDescription = "Insira os hábitos praticados no dia";

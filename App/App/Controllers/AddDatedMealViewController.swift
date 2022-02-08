@@ -12,6 +12,7 @@ import os.log
 class AddDatedMealViewController: UIViewController {
     @IBOutlet weak var registerMealView: RegisterMealView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var foodTime: UILabel!
     
     var dataHandler: DataHandler?
     var receivedDate: Date? {
@@ -43,6 +44,8 @@ class AddDatedMealViewController: UIViewController {
         if let meal = receivedMeal {
             registerMealView.set(meal: meal)
         }
+        
+        foodTime.text = Text.foodTime.rawValue.localized()
     }
 
     override func viewDidLayoutSubviews() {

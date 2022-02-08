@@ -48,4 +48,21 @@ enum Text: String {
     case close
     case weightDetail
     case habitDetail
+    case foodTime
+    case historic
+    case weekDayMeals
+
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+    case sunday
+    
+    case diary
+    
+    case foodRotine
+    case foodRotineDescription
+    case habitDescription
 }

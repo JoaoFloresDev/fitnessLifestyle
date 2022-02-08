@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DailyHabitsView" customModule="My_Way" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="aXd-qh-z1Q"/>
+                <outlet property="foodRotineDescriptionLabel" destination="dje-JA-cUc" id="9kf-Lk-IHO"/>
+                <outlet property="foodRotineLabel" destination="gf5-41-qiG" id="v5m-Tx-ObE"/>
                 <outlet property="groupedHabitsView" destination="9ob-Cs-LI9" id="6h5-Il-Bk4"/>
+                <outlet property="habitDescriptionLabel" destination="By5-PP-DPh" id="MbT-VH-kDa"/>
+                <outlet property="habitLabel" destination="lQ4-7M-NFI" id="bC7-Ya-q5L"/>
                 <outlet property="todayRatingView" destination="dMd-QP-HUo" id="J8B-q2-5AA"/>
             </connections>
         </placeholder>
@@ -28,7 +34,7 @@
                                     <rect key="frame" x="0.0" y="8" width="414" height="633"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Alimentação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-41-qiG">
-                                            <rect key="frame" x="136.5" y="0.0" width="141.5" height="29"/>
+                                            <rect key="frame" x="136.5" y="0.0" width="141" height="29"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -43,7 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="dje-JA-cUc" firstAttribute="top" secondItem="VIS-PD-Wku" secondAttribute="top" id="P5x-Iu-L0A"/>
                                                 <constraint firstItem="dje-JA-cUc" firstAttribute="leading" secondItem="VIS-PD-Wku" secondAttribute="leading" id="Rr0-zS-WLK"/>
@@ -96,7 +102,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="By5-PP-DPh" firstAttribute="top" secondItem="gll-bC-jRB" secondAttribute="top" id="0mm-xy-oJp"/>
                                                 <constraint firstItem="By5-PP-DPh" firstAttribute="leading" secondItem="gll-bC-jRB" secondAttribute="leading" id="Pra-Ex-5LD"/>
@@ -106,7 +112,7 @@
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-Cs-LI9" customClass="GroupedHabitsView" customModule="My_Way" customModuleProvider="target">
                                             <rect key="frame" x="68" y="72.5" width="278" height="110.5"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="278" id="gA0-rN-G2N"/>
                                             </constraints>
@@ -142,4 +148,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

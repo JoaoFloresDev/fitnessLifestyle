@@ -5,6 +5,7 @@
   Created by Joao Victor Flores da Costa on 07/02/22.
   Copyright © 2022 Joao Flores. All rights reserved.
 */
+
 premiumVersion = "Premium version";
 settings = "Settings";
 done = "Done";
@@ -51,3 +52,19 @@ clear = "Clear";
 close = "Close";
 weightDetail = "Weight Details";
 habitDetail = "Habit Detail";
+foodTime = "Meal Date";
+
+historic = "Historic";
+weekDayMeals = "Meals: day firstDay to day lastDay";
+
+monday = "Mon";
+tuesday = "Tue";
+wednesday = "Wed";
+thursday = "Thu";
+friday = "Fri";
+saturday = "Sat";
+sunday = "Sun";
+
+diary = "Diary";
+foodRotineDescription = "Enter the quality of food in the day";
+habitDescription = "Insert the habits practiced in the day";

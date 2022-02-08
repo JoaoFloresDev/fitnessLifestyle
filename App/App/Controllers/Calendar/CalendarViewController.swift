@@ -16,47 +16,61 @@ class CalendarViewController: UIViewController {
 	@IBOutlet weak var calendarView: JTACMonthView!
 	@IBOutlet weak var chartCollectionView: UICollectionView!
 	@IBOutlet weak var seeHistoryButton: UIButton!
-	
 	@IBOutlet var weekDayMealsLabel: UILabel!
-	// Attributes related to the calendar itself
-	var formatter = DateFormatter()
-	var selectedWeek: [Date] = [] {
+    
+    //DAY OF WEEK
+    @IBOutlet weak var mondayLabel: UILabel!
+    @IBOutlet weak var tuesdayLabel: UILabel!
+    @IBOutlet weak var wednesdayLabel: UILabel!
+    @IBOutlet weak var thursdayLabel: UILabel!
+    @IBOutlet weak var fridayLabel: UILabel!
+    @IBOutlet weak var saturdayLabel: UILabel!
+    @IBOutlet weak var sundayLabel: UILabel!
+    @IBOutlet weak var detailButton: UIButton!
+    
+    // Attributes related to the calendar itself
+	private var formatter = DateFormatter()
+    private var selectedWeek: [Date] = [] {
 		didSet {
 			seeHistoryButton.isHidden = selectedWeek.count == 0
 		}
 	}
+    
 	private var dataHandler: DataHandler?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		setupCalendarView()
-		
-		
 		setupChartCollectionView()
 		
-		
-		// Setting up the Data Handler (Core Data interface)
 		do {
 			self.dataHandler = try DataHandler.getShared()
-		}
-		catch { }
+		} catch { }
 		
 		self.calendarView.reloadData()
+        self.title = Text.historic.rawValue.localized()
+        
+        mondayLabel.text = Text.monday.rawValue.localized()
+        tuesdayLabel.text = Text.tuesday.rawValue.localized()
+        wednesdayLabel.text = Text.wednesday.rawValue.localized()
+        thursdayLabel.text = Text.thursday.rawValue.localized()
+        fridayLabel.text = Text.friday.rawValue.localized()
+        saturdayLabel.text = Text.saturday.rawValue.localized()
+        sundayLabel.text = Text.sunday.rawValue.localized()
+        
+        detailButton.setText(.detail)
 	}
 	
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		weekDayMealsLabel.isHidden=true
+		weekDayMealsLabel.isHidden = true
 		
 		// If the tab bar selected item has changed into this View Controller...
 		// We reload the calendar!
 		self.calendarView.reloadData()
-		
-		
 		self.setupGraphForDate(Date())
-		
 	}
 	
 	fileprivate func setupCalendarView() {
@@ -304,7 +318,10 @@ extension CalendarViewController: JTACMonthViewDelegate {
 	func setupWeekLabel(firstDay:Int?, lastDay:Int?){
 		guard firstDay != nil, lastDay != nil else {return}
 		weekDayMealsLabel.isHidden=false
-		weekDayMealsLabel.text = "Refeições: dia \(firstDay!) a \(lastDay!)"
+        var weekDayMealsText = Text.weekDayMeals.rawValue.localized()
+        weekDayMealsText = weekDayMealsText.replacingOccurrences(of: "firstDay", with: "\(String(describing: firstDay!))")
+        weekDayMealsText = weekDayMealsText.replacingOccurrences(of: "lastDay", with: "\(String(describing: lastDay!))")
+		weekDayMealsLabel.text = weekDayMealsText
 	}
 }
 

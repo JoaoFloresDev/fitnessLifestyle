@@ -31,6 +31,7 @@ class MealViewController: UIViewController {
         }
         
         fetchDailyData()
+        self.title = Text.diary.rawValue.localized()
     }
     
     override func viewDidLayoutSubviews() {

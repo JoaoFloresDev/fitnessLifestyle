@@ -17,6 +17,12 @@ class DailyHabitsView: UIView {
     @IBOutlet weak var todayRatingView: RatingView!
     @IBOutlet weak var groupedHabitsView: GroupedHabitsView!
     
+    @IBOutlet weak var foodRotineLabel: UILabel!
+    @IBOutlet weak var foodRotineDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var habitLabel: UILabel!
+    @IBOutlet weak var habitDescriptionLabel: UILabel!
+    
     private var delegate: DailyHabitsViewDelegate?
     private var dailyHabits : [DailyHabits : Bool] = [.exercise : false, .fruit : false, .drinkWater : false]
     private var dailyDiary: DailyDiary?
@@ -48,6 +54,11 @@ class DailyHabitsView: UIView {
         self.delegate = delegate
         todayRatingView.setup(delegate: self)
         groupedHabitsView.setup(delegate: self)
+        
+        foodRotineLabel.text = Text.foodRoutine.rawValue.localized()
+        foodRotineDescriptionLabel.text = Text.foodRotineDescription.rawValue.localized()
+        habitLabel.text = Text.habits.rawValue.localized()
+        habitDescriptionLabel.text = Text.habitDescription.rawValue.localized()
     }
     
     func setInitialDailyDiary(_ diary: DailyDiary?) {
